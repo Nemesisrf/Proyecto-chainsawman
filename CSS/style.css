@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/imagenes/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  height: 92px;
+  background-color: black;
+  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.imglogo {
+  height: 80px;
+  justify-content: flex-start;
+  margin-left: -18em;
+  padding: 4px;
+}
+
+.menu {
+  width: auto;
+  margin-top: 29px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 15px;
+}
+
+/*
+.menu li:first-child {
+    background-color:rgb(214, 127, 64);
+    color: black;
+}
+*/
+
+.menu ul li a :hover {
+  color: rgb(92, 92, 92);
+}
+
+main {
+  top: 60px;
+}
+
+.gallery-container {
+  display: flex;
+  width: 100%;
+  height: 65vh;
+}
+
+div.gallery-container div.gallery-item {
+  flex: 1;
+  height: 100%;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: flex 0.5s ease-in-out;
+}
+
+div.gallery-item span {
+  color: rgb(36, 36, 36);
+  font-weight: 600;
+  font-size: 25px;
+  padding: 15px 8px;
+  background-color: rgb(214, 127, 64);
+  opacity: 0.8s;
+  transition: opacity 0.8s ease;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+div.gallery-container div.gallery-item:hover span {
+  opacity: 0;
+}
+
+.gallery-container .gallery-item:hover {
+  flex: 6;
+}
+
+.gallery-container .gallery-item.g-item-1 {
+  background-image: url(/imagenes/evil\ angel.jpg);
+}
+
+.gallery-container .gallery-item.g-item-2 {
+  background-image: url(/imagenes/makima.jpg);
+}
+.gallery-container .gallery-item.g-item-3 {
+  background-image: url(/imagenes/aki.jpg);
+}
+.gallery-container .gallery-item.g-item-4 {
+  background-image: url(/imagenes/power.jpg);
+}
+.gallery-container .gallery-item.g-item-5 {
+  background-image: url(/imagenes/denji.jpg);
+}
+
+.historia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.chainsawmantitulo {
+  display: flex;
+  margin-top: 100px;
+  color: black;
+  margin-bottom: 100px;
+}
+
+.titulohistoria {
+  color: rgb(214, 127, 64);
+  font-size: 70px;
+  font-family: "Bebas Neue", cursive;
+  margin-left: 50px;
+}
+
+p {
+  margin-left: 50px;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+
+.titulosinopsis {
+  margin-top: 40px;
+  color: rgb(214, 127, 64);
+  font-size: 70px;
+  font-family: "Bebas Neue", cursive;
+  margin-left: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.imagenhistoria {
+  margin-left: 10px;
+}
+
+.personajestitulo {
+  margin-top: 40px;
+  color: rgb(214, 127, 64);
+  font-size: 70px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(0, 0, 0);
+  text-underline-position: under;
+  text-decoration-thickness: 4px;
+}
+.principalestitulo {
+  color: rgb(214, 127, 64);
+  font-size: 50px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+}
+
+.denji-container {
+  padding: 10px 10px 10px;
+  margin: 20px 20px 20px;
+  border: 3px solid rgb(214, 127, 64);
+  margin-left: 40px;
+  background-color: rgba(226, 226, 226, 0.616);
+}
+.denji {
+  font-family: "Bebas Neue", cursive;
+  margin-left: 20px;
+}
+
+.denji-imagen {
+  margin-left: 15px;
+}
+
+.denjitexto {
+  margin-left: -50px;
+}
+
+.textovideo {
+  margin-top: 40px;
+  color: rgb(214, 127, 64);
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.volumenes {
+  margin-top: 40px;
+  color: rgb(214, 127, 64);
+  font-size: 60px;
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.vol-animation {
+  height: 600px;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgb(63 63 63);
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.vol-animation:hover {
+  transform: translateY(-20px);
+}
+.vol-texto {
+  margin-left: 3em;
+  margin-left: 50px;
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: rgb(214, 127, 64);
+  height: 250px;
+}
+
+.logofooter {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.letrastitulosfooter {
+  margin-left: 60px;
+  font-size: 30px;
+  margin-bottom: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style: none;
+  color: rgb(128, 42, 42);
+  margin-top: 20px;
+}
+
+.letrasfooter {
+  margin-left: 60px;
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  
+}
+
+.img-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
