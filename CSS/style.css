@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url(/imagenes/fondo.jpg);
+  background-image: url(../imagenes/fondo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -98,20 +98,20 @@ div.gallery-container div.gallery-item:hover span {
 }
 
 .gallery-container .gallery-item.g-item-1 {
-  background-image: url(/imagenes/evil\ angel.jpg);
+  background-image: url(../imagenes/evil\ angel.jpg);
 }
 
 .gallery-container .gallery-item.g-item-2 {
-  background-image: url(/imagenes/makima.jpg);
+  background-image: url(../imagenes/makima.jpg);
 }
 .gallery-container .gallery-item.g-item-3 {
-  background-image: url(/imagenes/aki.jpg);
+  background-image: url(../imagenes/aki.jpg);
 }
 .gallery-container .gallery-item.g-item-4 {
-  background-image: url(/imagenes/power.jpg);
+  background-image: url(../imagenes/power.jpg);
 }
 .gallery-container .gallery-item.g-item-5 {
-  background-image: url(/imagenes/denji.jpg);
+  background-image: url(../imagenes/denji.jpg);
 }
 
 .historia {
